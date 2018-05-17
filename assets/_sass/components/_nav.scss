@@ -6,6 +6,8 @@
   z-index: 2;
 }
 
+
+
 header {
   width: 100%;
 
@@ -36,8 +38,16 @@ img {
 }
 
 
+.nav-cont {
+    @media (max-width: $desktop) {
+  width: 100%;
+}
+}
+
 
 .navbar-inverse {
+
+
 
   .navbar-nav {
 

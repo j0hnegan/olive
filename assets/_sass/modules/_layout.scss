@@ -5,6 +5,18 @@ html, body {
 
 }
 
+.mob-1 {
+    @media (max-width: $desktop) {
+  order:1;
+}
+}
+
+.mob-2 {
+    @media (max-width: $desktop) {
+  order:2;
+}
+}
+
 
 
 
@@ -101,13 +113,13 @@ html, body {
 
   @media (min-width: $desktop) {
     .mob-yes {
-      display:none
+      display: none !important;
     }
   }
 
   @media (max-width: $desktop) {
     .mob-no {
-      display:none
+      display:none !important;
     }
   }
 
@@ -199,5 +211,12 @@ transition: all .2s ease-in-out;
 }
 
 footer {
-  height: 300px;
+  .container {
+    color: $white;
+    padding: 80px 0;
+
+    .row {
+      margin: 0 15px;
+    }
+  }
 }
