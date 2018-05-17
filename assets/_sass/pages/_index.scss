@@ -1,0 +1,61 @@
+.index {
+
+  #hero {
+
+    overflow:hidden;
+
+    .hero {
+      @media (min-width: 1200px) {
+      width: 570px;
+      max-width: 570px;
+    }
+    }
+
+    .display-3 {
+      padding-bottom: 4px;
+      background: linear-gradient( 90deg, $purple , $blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    }
+
+    .row {
+      margin: 0;
+    }
+
+    .hero-cont {
+      padding: 120px 0 50px 0;
+
+    }
+
+    .main-content-cont {
+      @media (max-width: $desktop) {
+        padding: 0;
+      }
+    }
+
+    .nav-cont {
+      @media (min-width: $desktop) {
+        margin-bottom: -80px;
+      }
+    }
+  }
+
+  .callout {
+    background: linear-gradient( 90deg, $purple , $blue);
+    color: $white;
+    padding: 16px 0;
+
+    p {
+      margin:0;
+      font-weight: 300;
+      font-size: 18px;
+    }
+
+    a {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+
+
+}

@@ -1,0 +1,75 @@
+// Buttons and Links
+
+a {
+  color: $purple;
+  text-decoration: none;
+
+  &:hover, &:active, &:visited, &:focus {
+    color: $purple;
+    text-decoration: none;
+  }
+
+
+}
+
+.btn {
+  background: $purple;
+  border: 2px solid $purple;
+  border-radius: 2px;
+  font-weight: 400;
+  color: $white;
+  padding: 12px 24px;
+
+  &:hover {
+    background: darken($purple, 10%);
+    border: 1px solid darken($purple, 10%);
+  }
+
+  &-outline {
+    background: transparent;
+    border: 2px solid $purple;
+    border-radius: $bradius;
+    color: $purple;
+
+
+    &:hover {
+      background: $purple;
+      border: 2px solid $purple;
+      color: $white;
+    }
+  }
+
+  &-large {
+    padding: 24px 48px;
+font-size: 1.25rem;
+  }
+}
+
+
+
+.link {
+  color: $purple;
+  text-decoration: none;
+  font-weight: 400;
+
+  &:hover, &:active, &:visited, &:focus {
+    color: $purple;
+    text-decoration: underline;
+  }
+
+}
+
+
+
+button, a, .btn {
+  &:active {
+    outline: none !important;
+  }
+  &:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+&:focus-within {
+  outline: none !important;
+}
+}

@@ -1,0 +1,95 @@
+---
+layout: default
+class: index
+---
+
+<body class="white {{ page.class }}">
+	<div class="callout">
+		<div class="container">
+		  <p class="text-center"><b>Calling all veternarians!</b> Would you like to get your office involved? <a href="#">Contact us now</a></p>
+		</div>
+	</div>
+
+<section id="hero" class="white d-flex column hero">
+
+	<div class="container nav-cont">
+
+
+		{% include nav-inverse.html %}
+
+	</div>
+	<div class="container d-flex align-middle align-items-center hero-cont">
+		<div class="col-lg-6">
+			<h1 class="display-3">
+					Lorem Ipsum Dolor Sit
+				</h1>
+			<p class="lead">
+				Mea cu labore aliquid albucius. Et vim homero nostrud ceteros, ad porro facete usu. Et vim homero nostrud ceteros, ad porro facete usu.
+			</p>
+			<p class="lead d-flex align-items-center">
+				<button class="btn btn-outline btn-large col-lg-6">
+						Donate Now
+					</button>
+				<a class="link col-lg-6 text-center" href="#">About Us</a>
+			</p>
+		</div>
+		<div class="col-lg-6">
+			<img class="img-fluid hero" src="../assets/img/554x629-olive.png" srcset="../assets/img/554x629-olive@2x.png 2x" />
+		</div>
+	</div>
+
+	</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<footer class="blue">
+  <div class="container">
+
+
+
+    <div class="col-md-4 mx-auto text-center">
+      <i class="fa fa-copyright" aria-hidden="true"></i> 2018 John Egan
+    </div>
+
+</div>
+
+</footer>
+
+
+	<script>
+	$(document).ready(function(){
+
+
+	  // Add smooth scrolling on all links inside the navbar
+	  $("#hero a").on('click', function(event) {
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+
+	      // Store hash
+	      var hash = this.hash;
+
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 600, function(){
+
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    }  // End if
+	  });
+	});
+	</script>
